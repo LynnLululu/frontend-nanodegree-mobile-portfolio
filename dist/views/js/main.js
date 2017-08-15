@@ -512,7 +512,8 @@ function updatePositions() {
 
 
   var scrTp = (document.body.scrollTop) / 1250;
-  var l = window.items.length;
+  var items = document.querySelectorAll('.mover');
+  var l = items.length;
   var phases = [];
   for (var x = 0; x < 5; x++) {
     phases[x] = Math.sin(scrTp + x)
